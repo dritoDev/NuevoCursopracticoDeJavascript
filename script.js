@@ -20,9 +20,9 @@ const pResult = document.querySelector("#result");
   //==Escuchando directamente el botton || Dentro del formulairio==//
   btn.addEventListener("click", btnOnClick);
   
-  function btnOnClick(e) {
+  function btnOnClick(e.target.value) {
     const sumaInputs = input1.value + input2.value;
     pResult.innerText = "Resultado: " + sumaInputs;
     h2.innerText = "Sucessfull";
     console.log({ sumaInputs });
-}
+}  
